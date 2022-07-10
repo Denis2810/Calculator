@@ -1,0 +1,79 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  height: fit-content;
+  padding: 10px;
+  border: 2px solid black;
+  width: max-content;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 20vh;
+  background-color: orangered;
+}
+
+body {
+  background-image: url("fundal.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.operation,
+.delete,
+.number,
+.equal,
+.clear {
+  border: 2px solid white;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 33%;
+  color: white;
+  background-color: black;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 5px;
+  gap: 10px;
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+}
+
+.operation:hover,
+.delete:hover,
+.number:hover,
+.equal:hover,
+.clear:hover {
+  cursor: pointer;
+}
+
+.result {
+  display: none;
+}
+
+.secondNr {
+  display: none;
+}
+
+.operator {
+  display: none;
+}
