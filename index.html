@@ -14,38 +14,33 @@
     />
   </head>
   <body>
-    <div class="all">
-      <div class="grids">
-        <div class="screen">
-          <div class="operand">0</div>
-          <div class="operator">+</div>
-          <div class="secondNr">0</div>
-          <div class="result"></div>
+    <section>
+      <div class="container">
+        <div id="display"></div>
+        <div class="buttons">
+          <div id="delete" class="button">C</div>
+          <div class="button">/</div>
+          <div class="button">*</div>
+          <div id="back" class="button">&larr;</div>
+          <div class="button">7</div>
+          <div class="button">8</div>
+          <div class="button">9</div>
+          <div class="button">-</div>
+          <div class="button">4</div>
+          <div class="button">5</div>
+          <div class="button">6</div>
+          <div class="button">+</div>
+          <div class="button">1</div>
+          <div class="button">2</div>
+          <div class="button">3</div>
+          <div class="button">.</div>
+          <div class="button">(</div>
+          <div class="button">0</div>
+          <div class="button">)</div>
+          <div id="equal" class="button">=</div>
         </div>
-        <div class="clear" onclick="eraseCharacter()">C</div>
-        <div class="operation" onclick="addOperation('%')">%</div>
-        <div class="delete">
-          <i class="fa-solid fa-delete-left"></i>
-        </div>
-        <div class="operation" onclick="addOperation('÷')">÷</div>
-        <div class="number" onclick="addNumbers(7)">7</div>
-        <div class="number" onclick="addNumbers(8)">8</div>
-        <div class="number" onclick="addNumbers(9)">9</div>
-        <div class="operation" onclick="addOperation('X')">X</div>
-        <div class="number" onclick="addNumbers(4)">4</div>
-        <div class="number" onclick="addNumbers(5)">5</div>
-        <div class="number" onclick="addNumbers(6)">6</div>
-        <div class="operation" onclick="addOperation('-')">-</div>
-        <div class="number" onclick="addNumbers(1)">1</div>
-        <div class="number" onclick="addNumbers(2)">2</div>
-        <div class="number" onclick="addNumbers(3)">3</div>
-        <div class="operation" onclick="addOperation('+')">+</div>
-        <div class="number" onclick="addNumbers('00')">00</div>
-        <div class="number" onclick="addNumbers(0)">0</div>
-        <div class="operation" onclick="addPoint('.')">.</div>
-        <div class="equal" onclick="result()">=</div>
       </div>
-    </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
